@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/HappyWheel/',
+  base: '/MurmelMotion-Legacy/',
   // amazon-cognito-identity-js references the Node `global`; map it to the browser globalThis.
   define: {
     global: 'globalThis',
@@ -14,8 +14,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'HappyWheel',
-        short_name: 'HappyWheel',
+        name: 'MurmelMotion Rewards',
+        short_name: 'MurmelMotion Rewards',
         description: 'Motivational award lottery',
         theme_color: '#646cff',
         background_color: '#ffffff',

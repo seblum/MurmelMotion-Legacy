@@ -226,7 +226,7 @@ function Shell({
   return (
     <div className="app">
       <header className="tabbar">
-        <div className="brand">🎡 HappyWheel</div>
+        <div className="brand">🎡 MurmelMotion Rewards</div>
         <nav className="tabs">
           <button
             className={tab === 'wheel' ? 'tab active' : 'tab'}
@@ -295,7 +295,7 @@ function App() {
     <Shell theme={theme} onToggleTheme={toggle} />
   ) : (
     <div className="app">
-      <h1>HappyWheel</h1>
+      <h1>MurmelMotion Rewards</h1>
       <AuthForm />
     </div>
   )

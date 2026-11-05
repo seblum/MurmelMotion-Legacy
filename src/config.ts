@@ -1,4 +1,4 @@
-// Injected at build time from the happywheel-backend Terraform outputs.
+// Injected at build time from the murmelmotion-backend Terraform outputs.
 // See .env.example and the GitHub Actions secrets in deploy.yml.
 export const config = {
   apiUrl: import.meta.env.VITE_API_URL as string,

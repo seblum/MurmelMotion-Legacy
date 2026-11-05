@@ -1,9 +1,8 @@
 name: Deploy to GitHub Pages
 
+# Retained predecessor: no automatic production releases.
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,7 +26,7 @@ jobs:
       - run: npm run build
         env:
           # Baked into the static build. Set these as repo secrets from the
-          # happywheel-backend Terraform outputs (see .env.example).
+          # murmelmotion-backend Terraform outputs (see .env.example).
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
           VITE_AWS_REGION: ${{ secrets.VITE_AWS_REGION }}
           VITE_COGNITO_USER_POOL_ID: ${{ secrets.VITE_COGNITO_USER_POOL_ID }}

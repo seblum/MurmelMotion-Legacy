@@ -1,4 +1,8 @@
-# HappyWheel 🎡
+# MurmelMotion Rewards (legacy)
+
+This is the retained predecessor app in `MurmelMotion-Legacy`. The current workout
+tracker lives in the separate `MurmelMotion` checkout. Deployment of this
+predecessor is manual; existing source and reward records are retained.
 
 A motivational reward lottery — spin a lucky wheel to win a small reward. Built as
 an installable Progressive Web App (PWA) with **Vite**, **React** (TypeScript), and
@@ -7,7 +11,7 @@ an installable Progressive Web App (PWA) with **Vite**, **React** (TypeScript), 
 ## How it works
 
 Press **Get Reward** to spin the wheel. Unlike a typical "pick a random prize" app,
-HappyWheel decides the outcome the way a real prize wheel does — through physics:
+MurmelMotion Rewards decides the outcome the way a real prize wheel does — through physics:
 
 1. Each spin draws a random **duration** between **2 and 5 seconds**.
 2. Each spin draws a random **speed** between **10 and 30 rounds per second**.
@@ -57,5 +61,5 @@ Then open the printed local URL in your browser.
 - The wheel is a single inline SVG; its seven segments and emoji labels are generated
   from the `REWARDS` array, so adding or changing a reward updates the wheel automatically.
 - PWA support (installable, offline-capable) is provided by `vite-plugin-pwa`.
-- The app is configured to deploy under the `/HappyWheel/` base path (see `vite.config.ts`)
+- The app is configured to deploy under the `/MurmelMotion-Legacy/` base path (see `vite.config.ts`)
   and ships via GitHub Pages (`.github/workflows/deploy.yml`).
